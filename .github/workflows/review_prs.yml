@@ -15,7 +15,7 @@ jobs:
           egress-policy: audit
 
       - name: Run BCR PR Reviewer
-        if: github.repository_owner == 'bazelbuild'
+        if: github.repository_owner == 'bcr-testing'
         uses: bcr-testing/continuous-integration/actions/bcr-pr-reviewer@master
         with:
           # This token needs to be updated annually on Feb 05.
